@@ -12,13 +12,13 @@ export const posts = [
     title: "Apple",
   },
   {
-    category: "Vegatable",
+    category: "Vegetable",
     description: "Orange",
     id: "6q68hj1ywq-8915-22q5-ad26-26e8a151wq68",
     title: "Carrot",
   },
   {
-    category: "Vegatable",
+    category: "Vegetable",
     description: "Green",
     id: "15h26e8a1-22q5-8915-hfr3-51wq68hj1ywq",
     title: "Lettuce",
