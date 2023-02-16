@@ -8,7 +8,6 @@ type FormValues = {
   title: string;
   category: string;
   description: string;
-  userId: string;
 };
 
 const CreatePostMutation = gql`
