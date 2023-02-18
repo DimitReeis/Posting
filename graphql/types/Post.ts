@@ -47,3 +47,20 @@ builder.mutationField("createPost", (t) =>
     },
   })
 );
+
+builder.mutationField("deletePost", (t) =>
+  t.prismaField({
+    type: "Post",
+    args: {
+      id: t.arg.string({ required: true }),
+    },
+    resolve: async (_query, _parent, args, ctx) => {
+      if (!(await ctx).user) {
+        throw new Error("You have to be logged in to perform this action");
+      }
+      return prisma.post.delete({ where: { id: args.id } });
+      {
+      }
+    },
+  })
+);
